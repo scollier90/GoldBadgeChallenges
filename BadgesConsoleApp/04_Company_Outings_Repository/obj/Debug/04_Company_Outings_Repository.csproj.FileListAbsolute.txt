@@ -1,0 +1,1 @@
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\04_Company_Outings_Repository\obj\Debug\04_Company_Outings_Repository.csproj.CoreCompileInputs.cache

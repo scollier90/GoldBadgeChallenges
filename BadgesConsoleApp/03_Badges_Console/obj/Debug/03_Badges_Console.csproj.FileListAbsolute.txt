@@ -1,0 +1,10 @@
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\bin\Debug\03_Badges_Console.exe.config
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\bin\Debug\03_Badges_Console.exe
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\bin\Debug\03_Badges_Console.pdb
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\bin\Debug\BadgesConsoleApp.dll
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\bin\Debug\BadgesConsoleApp.pdb
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\obj\Debug\03_Badges_Console.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\obj\Debug\03_Badges_Console.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\obj\Debug\03_Badges_Console.csproj.CopyComplete
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\obj\Debug\03_Badges_Console.exe
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\03_Badges_Console\obj\Debug\03_Badges_Console.pdb

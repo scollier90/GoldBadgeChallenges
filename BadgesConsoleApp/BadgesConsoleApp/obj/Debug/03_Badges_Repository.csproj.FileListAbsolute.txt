@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\BadgesConsoleApp\bin\Debug\BadgesConsoleApp.dll
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\BadgesConsoleApp\bin\Debug\BadgesConsoleApp.pdb
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\BadgesConsoleApp\obj\Debug\03_Badges_Repository.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\BadgesConsoleApp\obj\Debug\03_Badges_Repository.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\BadgesConsoleApp\obj\Debug\BadgesConsoleApp.dll
+C:\ElevenFiftyProjects\Gold Badge Console App Challenges\BadgesConsoleApp\BadgesConsoleApp\obj\Debug\BadgesConsoleApp.pdb
