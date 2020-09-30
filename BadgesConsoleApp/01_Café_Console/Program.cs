@@ -10,6 +10,8 @@ namespace _01_Café_Console
     {
         static void Main(string[] args)
         {
+            ProgramUI program = new ProgramUI();
+            program.Run();
         }
     }
 }

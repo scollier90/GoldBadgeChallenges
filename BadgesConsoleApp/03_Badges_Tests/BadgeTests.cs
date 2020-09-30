@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace _03_Badges_Tests
 {
     [TestClass]
-    public class BadgeTest
+    public class BadgeTests
     {
         BadgesRepository _badgesRepository = new BadgesRepository();
         private void Seed()

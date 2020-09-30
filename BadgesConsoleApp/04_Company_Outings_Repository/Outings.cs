@@ -75,3 +75,4 @@ namespace _04_Company_Outings_Repository
         }
     }
 }
+

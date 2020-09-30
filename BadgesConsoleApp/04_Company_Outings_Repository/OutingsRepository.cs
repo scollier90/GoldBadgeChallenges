@@ -8,25 +8,51 @@ namespace _04_Company_Outings_Repository
 {
     public class OutingsRepository
     {
-        private List<Golf> golfOutingList = new List<Golf>();
-        private List<Bowling> bowlingOutingList = new List<Bowling>();
-        private List<Park> parkOutingList = new List<Park>();
-        private List<Concert> concertOutingList = new List<Concert>();
+        private List<Golf> _golfOutingList = new List<Golf>();
+        private List<Bowling> _bowlingOutingList = new List<Bowling>();
+        private List<Park> _parkOutingList = new List<Park>();
+        private List<Concert> _concertOutingList = new List<Concert>();
 
-        public bool AddGolfOuting(Golf )
+        //Add Outings
+        public void AddGolfOuting(Golf newOuting)
         {
+            _golfOutingList.Add(newOuting);
+        }
+        public void AddBowlingOuting(Bowling newOuting)
+        {
+            _bowlingOutingList.Add(newOuting);
+        }
+        public void AddParkOuting(Park newOuting)
+        {
+            _parkOutingList.Add(newOuting);
+        }
+        public void AddConcertOuting(Concert newOuting)
+        {
+            _concertOutingList.Add(newOuting);
+        }
 
-            int initialCount = golfOutingList.Count;
-            golfOutingList.Add()
+        //Read Outing Lists
+        public List<Golf> GetBowlingOutingList()
+        {
+            return _golfOutingList;
+        }
+        public List<Bowling> GetGolfOutingList()
+        {
+            return _bowlingOutingList;
+        }
+        public List<Park> GetParkOutingList()
+        {
+            return _parkOutingList;
+        }
+        public List<Concert> GetConcertOutingList()
+        {
+            return _concertOutingList;
+        }
 
-            if (initialCount < golfOutingList.Count)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+        //Helper method
+        private Type[] FindOutingByType()
+        {
+            foreach()
         }
     }
 }

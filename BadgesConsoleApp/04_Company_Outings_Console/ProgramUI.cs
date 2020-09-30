@@ -93,7 +93,7 @@ namespace _04_Company_Outings_Console
 
             if (outingType == "1")
             {
-                //_OutingsRepository."MethodName"(name, peopleAttending, dateEntry, dateOnly, costPerPerson)
+                _outingsRepository.AddGolfOuting(newOuting);
             }
             else if (outingType == "2")
             {

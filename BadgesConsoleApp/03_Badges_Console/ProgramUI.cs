@@ -76,6 +76,7 @@ namespace _03_Badges_Console
         //Create new Badge
         private void CreateNewBadge()
         {
+            Console.Clear();
             Console.WriteLine("Please enter the employee's last name.");
             string lastName = Console.ReadLine();
 
@@ -86,12 +87,13 @@ namespace _03_Badges_Console
 
             _badgesRepository.AddBadgeDictionaryEntry(badgeID, newBadge);
 
-            Console.WriteLine("The badge has been created.");
+            Console.WriteLine("The badge has been created."); 
         }
 
         //View Badges
         private void ViewAllBadges()
         {
+            Console.Clear();
             Console.WriteLine("All badge data is listed below: ");
 
             foreach (Badge badge in _badgesRepository.ViewAllBadgeData())
@@ -108,6 +110,7 @@ namespace _03_Badges_Console
         //Update Badge
         private void UpdateDoorsOnBadge()
         {
+            Console.Clear();
             Console.WriteLine("Please enter the employee's badge ID you wish to update.");
             int badgeID = int.Parse(Console.ReadLine());
 
@@ -130,7 +133,7 @@ namespace _03_Badges_Console
                 string removeDoorName = Console.ReadLine();
 
                 _badgesRepository.RemoveDoorOnBadge(removeDoorName, badgeID);
-                Console.WriteLine("The room has been removed from the badge.");
+                Console.WriteLine("The door has been removed from the badge.");
             }
             else
             {
@@ -144,6 +147,7 @@ namespace _03_Badges_Console
         //Delete Badge
         private void DeleteBadge()
         {
+            Console.Clear();
             Console.WriteLine("Please enter the employee's badge ID you wish to remove.");
             int badgeID = int.Parse(Console.ReadLine());
 
@@ -163,6 +167,7 @@ namespace _03_Badges_Console
         //Delete Door
         private void DeleteDoorsFromBadge()
         {
+            Console.Clear();
             Console.WriteLine("Please enter the employee's badge ID you wish to remove all doors from.");
             int badgeID = int.Parse(Console.ReadLine());
 
