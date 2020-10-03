@@ -69,6 +69,11 @@ namespace _01_Café_Console
 
             Console.WriteLine("Please enter the ingredients you wish this item to have. Please enter an ingredient (up to 7 available) and press Enter.");
 
+            //List<string> listOfIngredients = new List<string>();
+            //string ingredientInput = Console.ReadLine();
+
+            //newItem.Ingredients = _menuRepository.CreateIngredientList(ingredientInput, newItem.Number);
+
             string ingredientOne = Console.ReadLine();
             string ingredientTwo = Console.ReadLine();
             string ingredientThree = Console.ReadLine();

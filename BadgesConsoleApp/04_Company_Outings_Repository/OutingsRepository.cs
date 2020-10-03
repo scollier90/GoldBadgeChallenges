@@ -8,51 +8,62 @@ namespace _04_Company_Outings_Repository
 {
     public class OutingsRepository
     {
-        private List<Golf> _golfOutingList = new List<Golf>();
-        private List<Bowling> _bowlingOutingList = new List<Bowling>();
-        private List<Park> _parkOutingList = new List<Park>();
-        private List<Concert> _concertOutingList = new List<Concert>();
+        private List<Outing> _listOfOutings = new List<Outing>();
 
         //Add Outings
-        public void AddGolfOuting(Golf newOuting)
+        public bool AddOuting(Outing newOuting)
         {
-            _golfOutingList.Add(newOuting);
-        }
-        public void AddBowlingOuting(Bowling newOuting)
-        {
-            _bowlingOutingList.Add(newOuting);
-        }
-        public void AddParkOuting(Park newOuting)
-        {
-            _parkOutingList.Add(newOuting);
-        }
-        public void AddConcertOuting(Concert newOuting)
-        {
-            _concertOutingList.Add(newOuting);
+            if (newOuting == null)
+            {
+                return false;
+            }
+
+            int initialCount = _listOfOutings.Count;
+            _listOfOutings.Add(newOuting);
+
+            if(initialCount < _listOfOutings.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         //Read Outing Lists
-        public List<Golf> GetBowlingOutingList()
+        public List<Outing> GetOutingList()
         {
-            return _golfOutingList;
-        }
-        public List<Bowling> GetGolfOutingList()
-        {
-            return _bowlingOutingList;
-        }
-        public List<Park> GetParkOutingList()
-        {
-            return _parkOutingList;
-        }
-        public List<Concert> GetConcertOutingList()
-        {
-            return _concertOutingList;
+            return _listOfOutings;
         }
 
-        //Helper method
-        private Type[] FindOutingByType()
+        public decimal GetTotalOutingCost()
         {
-            foreach()
+            decimal grandTotal = 0.0m;
+
+            foreach (Outing outing in _listOfOutings)
+            {
+                grandTotal += outing.OutingTotalCost;
+            }
+            return grandTotal;
+        }
+
+        public decimal GetTypeTotalCost(int outingType)
+        {
+            List<Outing> outingTypeList = new List<Outing>();
+            decimal typeGrandTotal = 0.0m;
+            foreach (Outing outing in _listOfOutings)
+            {
+                if ((int)outing.TypeOfOuting == outingType)
+                {
+                    outingTypeList.Add(outing);
+                }
+            }
+            foreach(Outing cost in outingTypeList)
+            {
+                typeGrandTotal += cost.OutingTotalCost;
+            }
+            return typeGrandTotal;
         }
     }
 }

@@ -33,10 +33,19 @@ namespace BadgesConsoleApp
             }
         }
 
-        public void AddDoorOnBadgeList(string addDoorName, int badgeID)
+        public bool AddDoorOnBadgeList(string addDoorName, int badgeID)
         {
             Badge addDoor = GetBadgeByID(badgeID);
-            addDoor.DoorList.Add(addDoorName);
+
+            if(GetBadgeByID(badgeID) == null)
+            {
+                return false;
+            }
+            else
+            {
+                addDoor.DoorList.Add(addDoorName);
+                return true;
+            }
         }
         //Read
         public List<Badge> ViewAllBadgeData()
@@ -47,12 +56,6 @@ namespace BadgesConsoleApp
                 badgeList.Add(badge.Value);
             }
             return badgeList;
-        }
-
-        public List<string> GetDoorList(int badgeID)
-        {
-            Badge viewDoors = GetBadgeByID(badgeID);
-            return viewDoors.DoorList;
         }
 
         public bool RemoveDoorOnBadge(string removeDoorName, int badgeID)
@@ -123,6 +126,18 @@ namespace BadgesConsoleApp
                 }
             }
             return null;
+        }
+        public List<string> GetDoorList(int badgeID)
+        {
+            Badge viewDoors = GetBadgeByID(badgeID);
+            if (viewDoors == null)
+            {
+                return null;
+            }
+            else
+            {
+                return viewDoors.DoorList;
+            }
         }
     }
 }

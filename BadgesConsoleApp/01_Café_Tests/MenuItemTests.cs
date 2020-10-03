@@ -22,7 +22,7 @@ namespace _01_Café_Tests
             MenuItem item = new MenuItem();
             bool result = false;
 
-            Assert.IsTrue(_menuRepository.AddItemToMenu(result));
+            Assert.IsTrue(result, _menuRepository.AddItemToMenu(item));
         }
         [TestMethod]
         public void GetMenuListTest()

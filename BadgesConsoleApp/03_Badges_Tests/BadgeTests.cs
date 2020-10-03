@@ -48,14 +48,6 @@ namespace _03_Badges_Tests
             Assert.AreEqual(3, result);
         }
         [TestMethod]
-        public void GetDoorListTest()
-        {
-            Seed();
-            int result = _badgesRepository.GetDoorList(1150).Count;
-            Assert.AreEqual(4, result);
-        }
-
-        [TestMethod]
         public void RemoveDoorOnBadgeTest()
         {
             Seed();
@@ -75,6 +67,13 @@ namespace _03_Badges_Tests
             Seed();
             Assert.IsTrue(_badgesRepository.DeleteBadgeDictionaryEntry(1150));
             Assert.IsFalse(_badgesRepository.DeleteBadgeDictionaryEntry(2000));
+        }
+        [TestMethod]
+        public void GetDoorListTest()
+        {
+            Seed();
+            int result = _badgesRepository.GetDoorList(1150).Count;
+            Assert.AreEqual(4, result);
         }
     }
 }

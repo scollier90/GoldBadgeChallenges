@@ -123,24 +123,35 @@ namespace _03_Badges_Console
             {
                 Console.WriteLine("Please enter the door you would like to add to this badge.");
                 string addDoorName = Console.ReadLine();
-
-                _badgesRepository.AddDoorOnBadgeList(addDoorName, badgeID);
-                Console.WriteLine("The room has been added to the badge.");
+;
+                if (_badgesRepository.AddDoorOnBadgeList(addDoorName, badgeID) == true)
+                {
+                    Console.WriteLine("The room has been added to the badge.");
+                }
+                else
+                {
+                    Console.WriteLine("The badge ID you entered does not exist");
+                }
             }
             else if (doorInput == "2")
             {
                 Console.WriteLine("Please enter the door you would like to remove on this badge.");
                 string removeDoorName = Console.ReadLine();
 
-                _badgesRepository.RemoveDoorOnBadge(removeDoorName, badgeID);
-                Console.WriteLine("The door has been removed from the badge.");
+                if(_badgesRepository.RemoveDoorOnBadge(removeDoorName, badgeID) == true)
+                {
+                    Console.WriteLine("The door has been removed from the badge.");
+                }
+                else
+                {
+                    Console.WriteLine("The badge ID you entered does not exist or the door does not exist on the badge.");
+                }
+                
             }
             else
             {
                 Console.WriteLine("Please enter a valid option.");
             }
-
-            _badgesRepository.GetDoorList(badgeID);
         }
 
 

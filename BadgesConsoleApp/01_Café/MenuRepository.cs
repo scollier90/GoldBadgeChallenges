@@ -58,6 +58,22 @@ namespace _01_Café
             return null;
         }
 
+        //Repository
+        //public List<string> CreateIngredientList(string ingredient, string menuNumber)
+        //{
+        //    MenuItem addIngredient = GetMenuItemByNumber(menuNumber);
+
+        //    if (GetMenuItemByNumber(menuNumber) == null)
+        //    {
+        //        return null;
+        //    }
+        //    else
+        //    {
+        //        addIngredient.Ingredients.Add(ingredient);
+        //    }
+        //}
+
+
         public void Print(string ingredients)
         {
             Console.WriteLine(ingredients);
